@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CONTACT US</title>
+  
+  <!-- Font Link -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    /* =========================
+       DARK NEON THEME (WASA STYLE)
+       ========================= */
+    * {
+      box-sizing: border-box; /* Elements box se bahar na jayen */
+    }
+
+    body {
+      margin: 0;
+      padding: 40px 20px;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      color: white;
+      min-height: 100vh;
+      
+      /* Background Image with Dark Overlay */
+      background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(5, 16, 28, 0.9)), 
+                  url('https://images.unsplash.com/photo-1516387938699-a93567ec168e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      
+      /* Center Content */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Main Container Style (Glass Effect) */
+    /* Hum body ke direct divs ko target kar rahe hain */
+    body > div {
+      width: 100%;
+      max-width: 600px;
+      background: rgba(255, 255, 255, 0.05); /* Transparent Glass */
+      padding: 10px 30px;
+      border-left: 2px solid #00f2ff; /* Neon Border Left */
+      border-right: 2px solid #00f2ff; /* Neon Border Right */
+      box-shadow: 0 0 30px rgba(0, 242, 255, 0.1);
+      backdrop-filter: blur(5px);
+    }
+
+    /* First Div (Heading) */
+    body > div:first-child {
+      border-radius: 20px 20px 0 0;
+      padding-top: 30px;
+      border-bottom: none;
+    }
+
+    /* Last Div (Form End) */
+    body > div:last-child {
+      border-radius: 0 0 20px 20px;
+      padding-bottom: 30px;
+      border-top: none;
+    }
+
+    /* Headings */
+    h2 {
+      font-size: 2.8rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      /* Neon Text */
+      background: linear-gradient(to right, #00f2ff, #0072ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow(0 0 10px rgba(0, 114, 255, 0.6));
+    }
+
+    p {
+      color: #dcdcdc;
+      margin-bottom: 30px;
+      font-size: 1.1rem;
+    }
+
+    /* Form Labels */
+    label {
+      font-weight: 600;
+      color: #00f2ff;
+      display: inline-block;
+      margin-top: 15px;
+      margin-bottom: 5px;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+    }
+
+    /* Inputs & Textarea */
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 15px;
+      margin-top: 5px;
+      background-color: #0b121d; /* Dark Input BG */
+      border: 1px solid #1f2a3d;
+      border-radius: 10px;
+      color: white;
+      font-size: 1rem;
+      font-family: 'Poppins', sans-serif;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #00f2ff; /* Neon Border on Focus */
+      box-shadow: 0 0 15px rgba(0, 242, 255, 0.3);
+    }
+
+    /* Class Selection Section */
+    i {
+      display: block;
+      font-style: normal;
+      font-weight: 700;
+      color: white;
+      background: linear-gradient(45deg, #0072ff, #003366);
+      padding: 10px;
+      margin: 20px 0 10px 0;
+      border-radius: 5px;
+      letter-spacing: 2px;
+    }
+
+    /* Radio Buttons Styling */
+    input[type="radio"] {
+      accent-color: #00f2ff; /* Neon Color for Radio */
+      transform: scale(1.2);
+      margin-right: 5px;
+      margin-left: 15px;
+      margin-top: 15px;
+    }
+    
+    input[type="radio"] + label {
+      color: white;
+      font-size: 1rem;
+      margin-top: 0;
+      cursor: pointer;
+    }
+
+    /* Submit Button */
+    button {
+      width: 100%;
+      padding: 15px;
+      margin-top: 30px;
+      font-size: 1.2rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      /* Gradient Background */
+      background: linear-gradient(45deg, #0072ff, #00f2ff);
+      color: #000; /* Black Text */
+      transition: 0.3s;
+      box-shadow: 0 0 15px rgba(0, 114, 255, 0.4);
+    }
+
+    button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0 30px rgba(0, 242, 255, 0.8);
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 600px) {
+      h2 { font-size: 2rem; }
+      body > div { padding: 10px 20px; }
+      input[type="radio"] { margin-left: 5px; margin-bottom: 10px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Contact Us Section -->
+<div>
+  <h2>Contact Us</h2>
+  <p>If you have any questions or want to know more about our academy, feel free to contact us.</p>
+</div>
+
+<!-- Main Form Section -->
+<div>
+  <form>
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+  
+    <!-- Class Selection -->
+    <div> 
+      <i>SELECT CLASS</i>
+    </div>
+    
+    <div style="text-align: left; padding-left: 10px;">
+      <input type="radio" id="class9" name="class" value="IX">
+      <label for="class9">Class IX</label><br>
+
+      <input type="radio" id="class10" name="class" value="X">
+      <label for="class10">Class X</label><br>
+
+      <input type="radio" id="class11" name="class" value="XI">
+      <label for="class11">Class XI</label><br>
+
+      <input type="radio" id="class12" name="class" value="XII">
+      <label for="class12">Class XII</label>
+    </div>
+
+    <!-- Contact Info -->
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" placeholder="Write your message here" required></textarea><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>

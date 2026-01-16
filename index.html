@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THE ANGELS EDUCATION ACADEMY</title>
+  
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* =========================
+       BLACK & GRADIENT THEME
+       ========================= */
+    :root {
+        --text-white: #ffffff;
+        --neon-blue: #00f2ff;
+        --deep-blue: #0072ff;
+        --dark-bg: #050505;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #000000 0%, #0a192f 100%);
+      color: var(--text-white);
+      text-align: center;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    /* =========================
+       1. TOP LOOP (Neon Style)
+       ========================= */
+    .top-bar {
+      background-color: #000;
+      padding: 12px 0;
+      border-bottom: 2px solid;
+      border-image: linear-gradient(to right, #00f2ff, #0072ff) 1;
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 0 15px rgba(0, 242, 255, 0.2);
+    }
+
+    .loop-wrapper {
+        font-family: 'Courier New', monospace;
+        background: linear-gradient(to right, #00f2ff, #ffffff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+    }
+    
+    /* =========================
+       2. HEADER & CONTENT
+       ========================= */
+    header {
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      margin: 30px 0;
+      font-weight: 800;
+      text-transform: uppercase;
+      background: linear-gradient(to right, #00f2ff, #0072ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow(0 0 10px rgba(0, 114, 255, 0.4));
+    }
+
+    .content-box {
+      max-width: 950px;
+      margin: 0 auto 40px auto;
+      background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 10, 30, 0.9)), 
+                  url('https://images.unsplash.com/photo-1497633762265-9d179a990aa6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80');
+      background-size: cover;
+      background-position: center;
+      padding: 40px;
+      border-radius: 20px;
+      border: 1px solid rgba(0, 242, 255, 0.3);
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+    }
+
+    .content-box p {
+      font-size: 1.1rem;
+      line-height: 1.9;
+      color: #e0e0e0;
+      text-align: justify;
+      text-align-last: center;
+    }
+
+    /* =========================
+       3. HERO IMAGE
+       ========================= */
+    .hero-image {
+        margin-bottom: 50px;
+    }
+    
+    .hero-image img {
+      width: 100%;
+      max-width: 850px;
+      border-radius: 20px;
+      border: 3px solid #111;
+      box-shadow: 0 0 25px rgba(0, 114, 255, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .hero-image img:hover {
+        transform: scale(1.02);
+        box-shadow: 0 0 40px rgba(0, 242, 255, 0.5);
+    }
+
+    /* =========================
+       4. NAVIGATION
+       ========================= */
+    main {
+      background: rgba(255, 255, 255, 0.03);
+      padding: 40px 0;
+      margin-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      background-color: #111;
+      padding: 12px 35px;
+      border-radius: 50px;
+      font-weight: 600;
+      border: 1px solid #333;
+      transition: 0.4s;
+    }
+
+    nav a:hover {
+      background: linear-gradient(45deg, #0072ff, #00f2ff);
+      color: #000;
+      box-shadow: 0 0 20px rgba(0, 242, 255, 0.4);
+      transform: translateY(-3px);
+    }
+
+    /* =========================
+       5. FOOTER & BUTTON
+       ========================= */
+    footer {
+      padding: 50px 20px;
+      background: linear-gradient(to top, #000000, #050505);
+      border-top: 2px solid #0072ff;
+    }
+
+    dl {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    label {
+      font-size: 1.3rem;
+      background: linear-gradient(to right, #fff, #00f2ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: bold;
+      display: block;
+      margin-bottom: 15px;
+    }
+
+    textarea {
+      width: 100%;
+      padding: 15px;
+      border-radius: 12px;
+      border: 1px solid #333;
+      background-color: #0f0f0f;
+      color: white;
+      font-size: 1rem;
+      resize: vertical;
+      transition: 0.3s;
+      margin-bottom: 20px; /* Space before button */
+    }
+
+    textarea:focus {
+      outline: none;
+      border-color: #00f2ff;
+      box-shadow: 0 0 10px rgba(0, 242, 255, 0.2);
+    }
+
+    /* NEW BUTTON STYLE */
+    .submit-btn {
+      padding: 12px 40px;
+      font-size: 1rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      /* Gradient Background */
+      background: linear-gradient(45deg, #0072ff, #00f2ff);
+      color: #000; /* Black text for contrast */
+      transition: all 0.3s ease;
+      box-shadow: 0 0 15px rgba(0, 114, 255, 0.4);
+    }
+
+    .submit-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0 30px rgba(0, 242, 255, 0.8); /* Glow effect */
+      letter-spacing: 1px;
+    }
+
+    footer p {
+      color: #888;
+      margin-top: 20px;
+      font-size: 0.9rem;
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 600px) {
+      h1 { font-size: 1.8rem; margin: 20px 0; }
+      .content-box { padding: 25px; margin: 10px; }
+      nav { flex-direction: column; align-items: center; }
+      nav a { width: 80%; }
+      .submit-btn { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-bar">
+    <div class="loop-wrapper">
+       <span id="type-text"></span><span style="border-right: 3px solid #00f2ff; animation: blink 0.7s infinite;"></span>
+    </div>
+  </div>
+
+  <header>
+    <h1>THE ANGELS EDUCATION ACADEMY</h1>
+    
+    <div class="content-box">
+      <p>Education is the key to the progress of a nation. It shapes young minds, opens doors to new opportunities, and builds the foundation for a brighter future. Every child deserves quality education that encourages curiosity, creativity, and confidence. The Angels Education Academy is dedicated to providing students with the best learning environment, where teachers guide, inspire, and help every student achieve their full potential. By learning here, children not only gain knowledge but also develop the values and skills that will help them succeed in life. Education is not just about books; it is about discovering one’s abilities, dreaming big, and turning those dreams into reality.</p>
+    </div>
+
+    <div class="hero-image">
+      <img src="brainedu.jpg" alt="Students learning" onerror="this.src='https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'">
+    </div>
+
+      <div>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="about.html">About us</a>
+          <a href="class.html">Class</a>
+          <a href="timetable.html">Time Table</a>
+          <a href="contact.html">Contact</a>
+          <a href="result.html">RESULTS</a>
+        </nav>
+      </div>
+    </main>
+
+    <!-- FOOTER WITH BUTTON -->
+    <footer>
+      <dl>
+        <dd>
+          <label id="comments">Send us your thoughts</label>
+        </dd>
+        <dt>
+          <textarea id="Comments" type="text" placeholder="Enter Your Comments here..." rows="4"></textarea>
+          <br>
+          <!-- SUBMIT BUTTON ADDED HERE -->
+          <button class="submit-btn" onclick="alert('Comment Submitted! (Demo)')">SUBMIT</button>
+        </dt>
+      </dl>
+      <p>ALL RIGHTS ARE RESERVED &reg;</p>
+      <p>MADE BY: USMAN SHAHID &copy;</p>
+    </footer>
+
+  </header>
+
+  <script>
+    const textElement = document.getElementById("type-text");
+    const texts = ["WELCOME TO USMAN WEBSITES", "USMAN MAKE THIS WEBSITE IN CLASS 9"];
+    let count = 0;
+    let index = 0;
+    let currentText = "";
+    let letter = "";
+
+    (function type() {
+      if (count === texts.length) {
+        count = 0;
+      }
+      currentText = texts[count];
+      letter = currentText.slice(0, ++index);
+
+      textElement.textContent = letter;
+
+      if (letter.length === currentText.length) {
+        count++;
+        index = 0;
+        setTimeout(type, 2000); 
+      } else {
+        setTimeout(type, 100); 
+      }
+    }());
+
+    const styleSheet = document.createElement("style");
+    styleSheet.innerText = `
+      @keyframes blink {
+        from, to { border-color: transparent }
+        50% { border-color: #00f2ff; }
+      }
+    `;
+    document.head.appendChild(styleSheet);
+  </script>
+
+</body>
+</html>

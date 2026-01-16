@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About us</title>
+  
+  <!-- Font Link -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    /* =========================
+       DARK NEON THEME (NO PEOPLE)
+       ========================= */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 30px 10px;
+      font-family: 'Poppins', sans-serif;
+      /* Black to Deep Blue Gradient */
+      background: linear-gradient(135deg, #000000 0%, #05101c 100%);
+      color: white;
+      text-align: center;
+    }
+
+    /* Heading Styling */
+    h1 {
+      font-size: 3.5rem;
+      font-weight: 800;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      /* Neon Text */
+      background: linear-gradient(to right, #00f2ff, #0072ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow(0 0 15px rgba(0, 114, 255, 0.6));
+    }
+
+    /* Paragraph Styling */
+    i {
+      display: block;
+      max-width: 800px;
+      margin: 0 auto;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #ccc;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 25px;
+      border-radius: 15px;
+      border: 1px solid #1f2a3d;
+      box-shadow: inset 0 0 20px rgba(0,0,0,0.5);
+    }
+
+    hr {
+      border: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #00f2ff, transparent);
+      margin: 50px 0;
+      opacity: 0.7;
+    }
+
+    /* =========================
+       CARD DESIGN
+       ========================= */
+    div {
+      display: inline-block;
+      vertical-align: top;
+      width: 320px;
+      margin: 20px;
+      background-color: #0b121d; /* Dark Card BG */
+      border: 1px solid #1f2a3d;
+      border-radius: 20px;
+      overflow: hidden;
+      transition: 0.4s ease;
+      position: relative;
+    }
+
+    div:hover {
+      transform: translateY(-10px);
+      border-color: #00f2ff;
+      box-shadow: 0 0 30px rgba(0, 242, 255, 0.2);
+    }
+
+    /* Images Styling (Height fixed, Object cover) */
+    div img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      opacity: 0.85;
+      transition: 0.4s;
+      border-bottom: 4px solid #00f2ff;
+    }
+
+    div:hover img {
+      opacity: 1;
+      transform: scale(1.05);
+    }
+
+    /* Teacher Name Styling */
+    big {
+      display: block;
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #fff;
+      margin-top: 15px;
+      text-transform: uppercase;
+      text-shadow: 0 0 10px rgba(0, 114, 255, 0.8);
+    }
+
+    /* Subject Text Styling */
+    p {
+      color: #a0a0a0;
+      font-size: 0.95rem;
+      margin-bottom: 25px;
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
+
+    /* Responsive for Mobile */
+    @media (max-width: 650px) {
+      div {
+        display: block;
+        width: 100%;
+        max-width: 400px;
+        margin: 25px auto;
+      }
+      h1 { font-size: 2.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+<h1>OUR TEACHERS</h1>
+
+<i>
+  At our academy, we believe that education shapes the future of a child. Our teachers make learning engaging, meaningful, and fun, helping students excel in every subject. With their guidance, students gain knowledge, confidence, and the skills necessary to succeed in life.
+</i>
+
+<hr>
+
+<!-- Teacher 1: Computer (Code/Tech) -->
+<div>
+  <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Coding Screen">
+  <br>
+  <big>SIR ASHR</big>
+  <p>TEACHES COMPUTER 💻⌨️🖥️</p>
+</div>
+
+<!-- Teacher 2: Math (Equations/Blackboard) -->
+<div>
+  <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Math Formulas">
+  <br>
+  <big>SIR OBAID</big>
+  <p>TEACHES MATHEMATICS ➕➖🟰➗</p>
+</div>
+
+<!-- Teacher 3: English (Books/Pen) -->
+<div>
+  <img src="https://images.unsplash.com/photo-1457369804613-52c61a468e7d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Books and Pen">
+  <br>
+  <big>SIR MUBEEN</big>
+  <p>TEACHES ENGLISH 📝📚🗣️</p>
+</div>
+
+<!-- Teacher 4: Islamiat (Updated: QURAN IMAGE) -->
+<div>
+  <!-- Quran Image -->
+  <img src="https://images.unsplash.com/photo-1609599006353-e629aaabfeae?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Holy Quran">
+  <br>
+  <big>SIR QARI SUFYAN</big>
+  <p>TEACHES ISLAMIAT 🕌📖✒️</p>
+</div>
+
+<!-- Teacher 5: Chemistry (Flasks/Liquids) -->
+<div>
+  <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Chemistry Lab">
+  <br>
+  <big>SIR SAQLAIN</big>
+  <p>TEACHES CHEMISTRY ⚗️🧪🧫</p>
+</div>
+
+<!-- Teacher 6: Physics (Astronomy/Magnet) -->
+<div>
+  <img src="https://images.unsplash.com/photo-1636466497217-26a8cbeaf0aa?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Physics Space">
+  <br>
+  <big>SIR SIKANDER</big>
+  <p>TEACHES PHYSICS 🔭🧲📐</p>
+</div>
+
+</body>
+</html>

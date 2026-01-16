@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RESULTS</title>
+  
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    /* =========================
+       DARK NEON THEME
+       ========================= */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 40px 10px;
+      font-family: 'Poppins', sans-serif;
+      /* Black to Deep Blue Gradient Background */
+      background: linear-gradient(135deg, #000000 0%, #05101c 100%);
+      color: white;
+      text-align: center;
+      min-height: 100vh;
+    }
+
+    /* 1. STYLING THE <h> TAG */
+    /* HTML ma <h> standard nahi ha magar styling sa ham isay H1 jaisa bana denge */
+    header h {
+      display: block; /* Important layout fix */
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-bottom: 50px;
+      text-transform: uppercase;
+      /* Neon Text Effect */
+      background: linear-gradient(to right, #00f2ff, #0072ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow(0 0 15px rgba(0, 114, 255, 0.6));
+    }
+
+    /* 2. MAIN LAYOUT (Flexbox) */
+    main {
+      display: flex;
+      justify-content: center; /* Center align cards */
+      flex-wrap: wrap;         /* Mobile pe stack kare */
+      gap: 50px;               /* Cards ke darmiyan faasla */
+      padding-bottom: 50px;
+    }
+
+    /* 3. CARD STYLING (The Divs) */
+    main > div {
+      /* === 3:4 IMAGE ADJUSTMENT === */
+      width: 100%;
+      max-width: 400px; /* Ye width control karegi ke 3:4 image screen se bahar na jaye */
+      
+      background-color: #0b121d;
+      border: 1px solid #1f2a3d;
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    /* Hover Effect */
+    main > div:hover {
+      transform: translateY(-10px);
+      border-color: #00f2ff; /* Neon Border */
+      box-shadow: 0 0 30px rgba(0, 242, 255, 0.2);
+    }
+
+    /* 4. HEADINGS INSIDE CARDS */
+    h2, h3 {
+      font-size: 1.5rem;
+      color: #fff;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* 5. IMAGE STYLING */
+    img {
+      width: 100%;       /* Container ki full width lega */
+      height: auto;      /* Height auto rahegi taake 3:4 ratio kharab na ho */
+      border-radius: 10px;
+      border: 2px solid #333;
+      display: block;
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 600px) {
+      header h { font-size: 1.8rem; }
+      main > div { width: 95%; } /* Mobile pe full width use kare */
+    }
+
+  </style>
+</head>
+<body>
+
+<header>
+  <h>Outstanding Academic Results</h>
+</header>
+
+<main>
+  
+  <!-- Class 9 Result Card -->
+  <div>
+    <h2>Class 9 Academic results</h2>
+    <br>
+    <!-- Aap apni 3:4 ratio wali image yahan lagayen -->
+    <img src="result9.jpg" alt="Class 9 Results">
+  </div>
+ 
+  <!-- Class 10 Result Card -->
+  <div>
+    <h3>CLASS 10 ACADEMIC RESULT</h3>
+    <!-- Aap apni 3:4 ratio wali image yahan lagayen -->
+    <img src="result10.jpg" alt="Class 10 Results">
+  </div>
+
+</main>
+
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Classes</title>
+  
+  <!-- Font Link -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    /* =========================
+       DARK NEON THEME
+       ========================= */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 40px 20px;
+      font-family: 'Poppins', sans-serif;
+      /* Black to Deep Blue Gradient */
+      background: linear-gradient(135deg, #000000 0%, #05101c 100%);
+      color: white;
+      text-align: center;
+    }
+
+    /* 1. MAIN HEADING STYLE */
+    h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+      /* Neon Blue Text */
+      background: linear-gradient(to right, #00f2ff, #0072ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow(0 0 15px rgba(0, 114, 255, 0.6));
+    }
+
+    /* 2. CLASS INFO BOX (With Background Image) */
+    .class-info-box {
+      max-width: 900px;
+      margin: 0 auto;
+      /* Background Image with Dark Overlay */
+      background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(5, 16, 28, 0.9)), 
+                  url('https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80');
+      background-size: cover;
+      background-position: center;
+      padding: 50px;
+      border-radius: 25px;
+      border: 2px solid #00f2ff; /* Neon Border */
+      box-shadow: 0 0 30px rgba(0, 242, 255, 0.15);
+      transition: transform 0.3s ease;
+    }
+
+    .class-info-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 40px rgba(0, 242, 255, 0.3);
+    }
+
+    p {
+      font-size: 1.15rem;
+      line-height: 1.9;
+      color: #e0e0e0;
+      text-align: justify;
+      text-align-last: center;
+    }
+
+    b {
+      color: #00f2ff; /* Highlighted text color */
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+
+    /* Divider */
+    hr {
+      border: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #00f2ff, transparent);
+      margin: 60px 0;
+      opacity: 0.5;
+    }
+
+    /* 3. TEST SESSION BOX (With Different Background Image) */
+    .test-session-box {
+      max-width: 900px;
+      margin: 0 auto;
+      /* Background Image with Red Tint Overlay */
+      background: linear-gradient(rgba(20, 0, 0, 0.9), rgba(40, 0, 0, 0.85)), 
+                  url('https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80');
+      background-size: cover;
+      background-position: center;
+      padding: 50px;
+      border-radius: 25px;
+      border: 2px solid #ff0055; /* Red Neon Border for Alert */
+      box-shadow: 0 0 30px rgba(255, 0, 85, 0.2);
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: #ff0055; /* Red Text */
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      text-shadow: 0 0 15px rgba(255, 0, 85, 0.6);
+    }
+
+    i {
+      display: block;
+      font-style: normal;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #ffcccc; /* Light reddish white */
+      font-weight: 300;
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 600px) {
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1.8rem; }
+      .class-info-box, .test-session-box { padding: 30px; }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Which classes do we teach❓</h1>
+
+  <!-- Paragraph wrapped in a styled box with background image -->
+  <div class="class-info-box">
+    <p>
+      At The Angels Education Academy, we provide quality education to students of <b>classes 9, 10, 11, and 12</b>. Our dedicated teachers ensure that no topic is left incomplete, and every student receives the guidance they need to excel. We focus on understanding, practical learning, and skill development, making sure that students are well-prepared for exams and real-life challenges.
+    </p>
+  </div>
+
+  <hr>
+
+  <!-- Test Session Section wrapped in a styled box -->
+  <div class="test-session-box">
+    <h2>OUR TEST SESSION PROGRAM‼️</h2>
+    <i>
+      To ensure that students fully understand the material, our academy conducts special test sessions from December to March. These tests help students evaluate the quality of education they have received and identify areas to improve. Additionally, we hold monthly tests throughout the year, giving students regular practice and helping them stay prepared for all exams.
+    </i>
+  </div>
+
+</body>
+</html>

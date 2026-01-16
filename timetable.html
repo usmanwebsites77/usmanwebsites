@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time Table</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    /* =========================
+       DARK NEON THEME
+       ========================= */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 40px 10px;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      color: white;
+
+      /* BACKGROUND IMAGE WITH DARK OVERLAY */
+      background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(5, 16, 28, 0.9)), 
+                  url('https://images.unsplash.com/photo-1506784335131-e699942b8bec?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed; /* Parallax Effect */
+    }
+
+    /* =========================
+       HEADINGS STYLE (H1, H2, H3, H4)
+       ========================= */
+    h1, h2, h3, h4 {
+      font-weight: 800;
+      text-transform: uppercase;
+      margin-top: 50px;
+      margin-bottom: 20px;
+      
+      /* NEON TEXT EFFECT */
+      background: linear-gradient(to right, #00f2ff, #0072ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow(0 0 10px rgba(0, 114, 255, 0.6));
+    }
+
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 2.2rem; }
+    h3 { font-size: 2rem; }
+    h4 { font-size: 1.8rem; }
+
+    /* =========================
+       TABLE STYLING
+       ========================= */
+    /* Wrapper to make table scroll on mobile */
+    .table-container {
+      overflow-x: auto;
+      margin-bottom: 50px;
+    }
+
+    table {
+      width: 100%;
+      max-width: 800px; /* Limits width on big screens */
+      margin: 0 auto;   /* Centers the table */
+      border-collapse: collapse;
+      
+      /* Glassmorphism Effect */
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid #00f2ff; /* Neon Border */
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 0 30px rgba(0, 242, 255, 0.15);
+    }
+
+    /* Header Row */
+    thead tr {
+      background: linear-gradient(45deg, #0072ff, #003366);
+    }
+
+    th {
+      padding: 15px;
+      color: white;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* Data Rows */
+    td {
+      padding: 12px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      color: #e0e0e0;
+      transition: 0.3s;
+    }
+
+    /* Time Column Highlight */
+    td:first-child {
+      font-weight: bold;
+      color: #00f2ff;
+      border-right: 1px solid rgba(0, 242, 255, 0.3);
+    }
+
+    /* Row Hover Effect */
+    tbody tr:hover {
+      background-color: rgba(0, 242, 255, 0.1);
+      transform: scale(1.01);
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 600px) {
+      h1, h2, h3, h4 { font-size: 1.5rem; }
+      th, td { font-size: 0.9rem; padding: 10px; }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- 9TH CLASS -->
+  <h1>OUR TIME SCHEDULE FOR NINTH CLASS (9th)</h1>
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Time</th>
+          <th>Subject</th>
+          <th>Teacher</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>3:00 - 3:30</td>
+          <td>URDU</td>
+          <td>Miss Asma</td>
+        </tr>
+        <tr>
+          <td>3:30 - 4:00</td>
+          <td>Computer</td>
+          <td>Sir Ashr</td>
+        </tr>
+        <tr>
+          <td>4:00 - 4:30</td>
+          <td>Mathematics</td>
+          <td>Sir Obaid</td>
+        </tr>
+        <tr>
+          <td>4:30 - 5:00</td>
+          <td>English</td>
+          <td>Sir Mubeen</td>
+        </tr>
+        <tr>
+          <td>5:00 - 5:30</td>
+          <td>Islamiat</td>
+          <td>Qari Sufyan</td>
+        </tr>
+        <tr>
+          <td>5:30 - 6:00</td>
+          <td>Chemistry</td>
+          <td>Sir Saqlain</td>
+        </tr>
+        <tr>
+          <td>6:00 - 6:30</td>
+          <td>Physics</td>
+          <td>Sir Sikander</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 10TH CLASS -->
+  <h2>OUR TIME SCHEDULE FOR TEN CLASS (10th)</h2>
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Time</th>
+          <th>Subject</th>
+          <th>Teacher</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>3:00 - 3:30</td>
+          <td>COMPUTER</td>
+          <td>SIR ASHAR</td>
+        </tr>
+        <tr>
+          <td>3:30 - 4:00</td>
+          <td>ISLAMIAT</td>
+          <td>QARI SUFYAN</td>
+        </tr>
+        <tr>
+          <td>4:00 - 4:30</td>
+          <td>URDU</td>
+          <td>MISS ASMA</td>
+        </tr>
+        <tr>
+          <td>4:30 - 5:00</td>
+          <td>PHYSICS</td>
+          <td>Sir SIKANDER</td>
+        </tr>
+        <tr>
+          <td>5:00 - 5:30</td>
+          <td>CHEMISTRY</td>
+          <td>SIR SAQLAIN</td>
+        </tr>
+        <tr>
+          <td>5:30 - 6:00</td>
+          <td>MATHEMATICS</td>
+          <td>Sir OBAID</td>
+        </tr>
+        <tr>
+          <td>6:00 - 6:30</td>
+          <td>ENGLISH</td>
+          <td>Sir MUBEEN</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 11TH CLASS -->
+  <h3>OUR TIME SCHEDULE FOR ELEVENTH (11th) CLASS</h3>
+  <div class="table-container">
+    <table>
+      <thead>    
+        <tr>    
+          <th>Time</th>    
+          <th>Subject</th>    
+          <th>Teacher</th>    
+        </tr>    
+      </thead>    
+      <tbody>    
+        <tr>    
+          <td>3:00 - 3:30</td>    
+          <td>Physics</td>    
+          <td>Sir Sikander</td>    
+        </tr>    
+        <tr>    
+          <td>3:30 - 4:00</td>    
+          <td>Urdu</td>    
+          <td>Miss Asma</td>    
+        </tr>    
+        <tr>    
+          <td>4:00 - 4:30</td>    
+          <td>Chemistry</td>    
+          <td>Sir Saqlain</td>    
+        </tr>    
+        <tr>    
+          <td>4:30 - 5:00</td>    
+          <td>Mathematics</td>    
+          <td>Sir Obaid</td>    
+        </tr>    
+        <tr>    
+          <td>5:00 - 5:30</td>    
+          <td>ENGLISH</td>    
+          <td>SIR MUBEEN</td>    
+        </tr>    
+        <tr>    
+          <td>5:30 - 6:00</td>    
+          <td>Computer</td>    
+          <td>Sir Ashr</td>    
+        </tr>    
+        <tr>    
+          <td>6:00 - 6:30</td>    
+          <td>ISLAMIAT</td>    
+          <td>QARI SUFYAN</td>    
+        </tr>    
+      </tbody>    
+    </table>
+  </div>
+
+  <!-- 12TH CLASS -->
+  <h4>OUR TIME SCHEDULE FOR TWELVTH (12th) CLASS</h4>
+  <div class="table-container">
+    <table>    
+      <thead>    
+        <tr>    
+          <th>Time</th>    
+          <th>Subject</th>    
+          <th>Teacher</th>    
+        </tr>    
+      </thead>    
+      <tbody>    
+        <tr>    
+          <td>3:00 - 3:30</td>    
+          <td>Mathematics</td>    
+          <td>Sir Obaid</td>    
+        </tr>    
+        <tr>    
+          <td>3:30 - 4:00</td>    
+          <td>Physics</td>    
+          <td>Sir Sikander</td>    
+        </tr>    
+        <tr>    
+          <td>4:00 - 4:30</td>    
+          <td>English</td>    
+          <td>Sir Mubeen</td>    
+        </tr>    
+        <tr>    
+          <td>4:30 - 5:00</td>    
+          <td>Computer</td>    
+          <td>Sir Ashr</td>    
+        </tr>    
+        <tr>    
+          <td>5:00 - 5:30</td>    
+          <td>Chemistry</td>    
+          <td>Sir Saqlain</td>    
+        </tr>    
+        <tr>    
+          <td>5:30 - 6:00</td>    
+          <td>Urdu</td>    
+          <td>Miss Asma</td>    
+        </tr>    
+        <tr>    
+          <td>6:00 - 6:30</td>    
+          <td>Islamiat</td>    
+          <td>Qari Sufyan</td>    
+        </tr>    
+      </tbody>    
+    </table>
+  </div>
+
+</body>
+</html>
